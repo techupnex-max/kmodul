@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K|MODULE — Модульные дома и бани в Архангельске</title>
+  <meta name="description" content="Собственное производство тёплых модульных домов и бань для Севера в Архангельске. Сборка в цеху от 21 дня, монтаж на участке за 1 день." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- Полоса прогресса чтения -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ================= ШАПКА САЙТА ================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#top" class="brand-logo" aria-label="K-Module — на главную">
+        <span class="brand-mark">
+          <span class="brand-k">K</span>
+          <span class="brand-sep"></span>
+          <span class="brand-word">MODULE</span>
+        </span>
+        <span class="brand-meta">
+          <strong>Архангельск</strong>
+          <small>Свой цех • 64°32′ с.ш.</small>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Основная навигация">
+        <a href="#catalog" class="nav-link active">Каталог</a>
+        <a href="#tech" class="nav-link">Конструктив</a>
+        <a href="#calculator" class="nav-link">Калькулятор</a>
+        <a href="#process" class="nav-link">Как строим</a>
+        <a href="#contacts" class="nav-link">Экскурсия в цех</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://vk.ru/kmodule" target="_blank" rel="noopener" class="btn-vk" title="Сообщество ВКонтакте">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z"/></svg>
+          <span>vk.ru/kmodule</span>
+        </a>
+        <a href="#contacts" class="btn-header-cta">Записаться в цех</a>
+        <button class="burger-btn" id="openDrawerBtn" aria-label="Открыть меню">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Удобная лента быстрого перехода на смартфонах -->
+    <nav class="mobile-quick-nav" aria-label="Быстрый переход по разделам">
+      <a href="#catalog" class="quick-pill active">Проекты</a>
+      <a href="#tech" class="quick-pill">Конструктив</a>
+      <a href="#calculator" class="quick-pill">Калькулятор</a>
+      <a href="#process" class="quick-pill">Этапы</a>
+      <a href="#contacts" class="quick-pill">В цех</a>
+    </nav>
+  </header>
+
+  <!-- Выдвижное мобильное меню -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-panel">
+      <div>
+        <div class="drawer-top">
+          <span class="brand-mark">
+            <span class="brand-k">K</span>
+            <span class="brand-sep"></span>
+            <span class="brand-word">MODULE</span>
+          </span>
+          <button id="closeDrawerBtn" class="drawer-close" aria-label="Закрыть меню">&times;</button>
+        </div>
+
+        <div class="drawer-links">
+          <a href="#catalog" class="drawer-link"><span>Каталог домов и бань</span><small>6 моделей</small></a>
+          <a href="#tech" class="drawer-link"><span>Пирог стены и каркас</span><small>до −40 °C</small></a>
+          <a href="#calculator" class="drawer-link"><span>Калькулятор сметы</span><small>онлайн</small></a>
+          <a href="#process" class="drawer-link"><span>Как устроена работа</span><small>4 шага</small></a>
+          <a href="#contacts" class="drawer-link"><span>Экскурсия в цех</span><small>Архангельск</small></a>
+        </div>
+      </div>
+
+      <div class="drawer-bottom">
+        <a href="https://vk.ru/kmodule" target="_blank" rel="noopener" class="btn-vk drawer-vk">
+          Открыть сообщество vk.ru/kmodule
+        </a>
+        <a href="#contacts" class="btn-main drawer-link drawer-cta">
+          Записаться на просмотр
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main id="top">
+    <!-- ================= ПЕРВЫЙ ЭКРАН (EDITORIAL + ЧЕРТЁЖНЫЙ АКЦЕНТ) ================= -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-layout">
+          <div class="hero-copy reveal-up">
+            <div class="spec-line">
+              <span class="mono-tag">АРХАНГЕЛЬСК • ПОМОРЬЕ</span>
+              <span class="spec-dot"></span>
+              <span>Сборка в закрытом сухом цеху</span>
+            </div>
+
+            <h1>
+              Модульные дома для настоящей северной зимы — <em>готовы к жизни за 21 день</em>
+            </h1>
+
+            <p class="hero-lead">
+              Без бригад, живущих на участке месяцами, и переплат за переделки. Собираем дом из сухой строганой доски в цеху, привозим тралом и ставим на сваи краном за один день.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#catalog" class="btn-main">Смотреть проекты и цены</a>
+              <a href="#calculator" class="btn-ghost">Собрать свой расчёт</a>
+            </div>
+
+            <!-- Живая сводка по производству -->
+            <dl class="hero-ledger">
+              <div>
+                <dt>Срок в цеху</dt>
+                <dd><span data-count="21">21</span>–35 дней</dd>
+              </div>
+              <div>
+                <dt>Утепление</dt>
+                <dd><span data-count="200">200</span>–250 мм</dd>
+              </div>
+              <div>
+                <dt>Монтаж на месте</dt>
+                <dd>1 день</dd>
+              </div>
+              <div>
+                <dt>Отзывы в ВК</dt>
+                <dd>5.0 ★</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="hero-showcase reveal-up" style="--delay: 0.1s;">
+            <div class="showcase-frame">
+              <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=85" alt="Модульный дом K-32 Онега с панорамным остеклением" />
+              <div class="showcase-ruler" aria-hidden="true">
+                <span>МОДЕЛЬ K-32 «ОНЕГА»</span>
+                <span>8.0 × 4.0 М • 32 М²</span>
+              </div>
+            </div>
+
+            <div class="showcase-caption">
+              <div>
+                <strong>Хит сезона — K-32 «Онега»</strong>
+                <span>Спальня, кухня-гостиная с панорамой, санузел и терраса</span>
+              </div>
+              <div class="showcase-price">
+                <b>от 1 490 000 ₽</b>
+                <button type="button" class="link-arrow" onclick="openProjectModal('k32')">Планировка →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= КАТАЛОГ ПРОЕКТОВ ================= -->
+    <section class="section" id="catalog">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div>
+            <span class="mono-eyebrow">01 / МОДЕЛЬНЫЙ РЯД</span>
+            <h2>Проекты домов и бань с честной комплектацией</h2>
+          </div>
+          <p class="section-note">
+            Переключайте формат поставки — стоимость и состав работ сразу обновятся по каждой модели.
+          </p>
+        </div>
+
+        <div class="catalog-toolbar reveal-up">
+          <div class="filter-tabs" role="tablist">
+            <button class="filter-btn active" data-filter="all">Все модели (6)</button>
+            <button class="filter-btn" data-filter="dacha">Для дачи и отдыха</button>
+            <button class="filter-btn" data-filter="pmzh">Для семьи и ПМЖ</button>
+            <button class="filter-btn" data-filter="sauna">Бани и дом-баня</button>
+          </div>
+
+          <div class="pkg-switch" aria-label="Выбор комплектации">
+            <button class="pkg-btn active" data-pkg="contour">Тёплый контур</button>
+            <button class="pkg-btn" data-pkg="turnkey">Под ключ с отделкой</button>
+          </div>
+        </div>
+
+        <div class="catalog-grid" id="catalogGrid"></div>
+      </div>
+    </section>
+
+    <!-- ================= ИНЖЕНЕРИЯ / КОНСТРУКТИВ ================= -->
+    <section class="section section-dark" id="tech">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div>
+            <span class="mono-eyebrow light">02 / ИНЖЕНЕРИЯ СЕВЕРА</span>
+            <h2>Конструктив, рассчитанный на −40 °C и снеговые шапки Поморья</h2>
+          </div>
+          <p class="section-note light">
+            Нажимайте на узлы дома, чтобы посмотреть точный состав слоёв и материалы, с которыми мы работаем в цеху.
+          </p>
+        </div>
+
+        <div class="tech-board reveal-up">
+          <div class="tech-nav" id="techTabs">
+            <button class="tech-tab active" data-tech="walls">
+              <span class="tech-code">УЗЕЛ А</span>
+              <strong>Стены с перекрёстным контуром 200 мм</strong>
+              <small>Базальтовые плиты высокой плотности без мостиков холода</small>
+            </button>
+            <button class="tech-tab" data-tech="frame">
+              <span class="tech-code">УЗЕЛ Б</span>
+              <strong>Сухой строганый каркас камерной сушки</strong>
+              <small>Влажность 12–14%: двери не клинит, геометрия не гуляет</small>
+            </button>
+            <button class="tech-tab" data-tech="windows">
+              <span class="tech-code">УЗЕЛ В</span>
+              <strong>Панорамные теплопакеты 70 мм</strong>
+              <small>Мультифункциональное стекло + аргон + тёплый монтаж</small>
+            </button>
+            <button class="tech-tab" data-tech="roof">
+              <span class="tech-code">УЗЕЛ Г</span>
+              <strong>Пол и кровля 250 мм (IV снеговой район)</strong>
+              <small>Усиленная стропильная система и влагостойкая фанера ФСФ</small>
+            </button>
+          </div>
+
+          <div class="tech-spec-sheet" id="techDetailBox"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= КАЛЬКУЛЯТОР СМЕТЫ ================= -->
+    <section class="section" id="calculator">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div>
+            <span class="mono-eyebrow">03 / ОНЛАЙН-РАСЧЁТ</span>
+            <h2>Калькулятор стоимости вашего дома</h2>
+          </div>
+          <p class="section-note">
+            Прикиньте бюджет за 30 секунд: выберите площадь, толщину утепления и нужные работы на участке.
+          </p>
+        </div>
+
+        <div class="calc-layout reveal-up">
+          <div class="calc-controls">
+            <div class="calc-block">
+              <div class="calc-block-head">
+                <label for="calcAreaRange">Площадь строения</label>
+                <output id="calcAreaDisplay" for="calcAreaRange">32 м²</output>
+              </div>
+              <input type="range" id="calcAreaRange" min="18" max="84" step="2" value="32" />
+              <div class="area-presets">
+                <button type="button" class="preset-chip" data-area="18">18 м² • Студия</button>
+                <button type="button" class="preset-chip active" data-area="32">32 м² • 1 спальня</button>
+                <button type="button" class="preset-chip" data-area="48">48 м² • 2 спальни</button>
+                <button type="button" class="preset-chip" data-area="64">64 м² • 3 спальни</button>
+              </div>
+            </div>
+
+            <div class="calc-block">
+              <div class="calc-block-head">
+                <span>Тепловой контур</span>
+              </div>
+              <div class="choice-grid" id="seasonGroup">
+                <button type="button" class="choice-card" data-mult="0.92" data-name="Дача (150 мм)">
+                  <strong>Дачный • 150 мм</strong>
+                  <span>Весна — поздняя осень</span>
+                </button>
+                <button type="button" class="choice-card active" data-mult="1" data-name="Зимний ПМЖ (200 мм)">
+                  <strong>Зимний • 200 мм</strong>
+                  <span>Круглый год до −35 °C</span>
+                </button>
+                <button type="button" class="choice-card" data-mult="1.09" data-name="Арктика (250 мм)">
+                  <strong>Север+ • 250 мм</strong>
+                  <span>Максимум тепла до −45 °C</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="calc-block">
+              <div class="calc-block-head">
+                <span>Степень готовности</span>
+              </div>
+              <div class="choice-grid" id="finishGroup">
+                <button type="button" class="choice-card" data-rate="42000" data-name="Тёплый контур">
+                  <strong>Тёплый контур</strong>
+                  <span>Фасад, кровля, окна, утепление</span>
+                </button>
+                <button type="button" class="choice-card" data-rate="49000" data-name="Предчистовая">
+                  <strong>Предчистовая</strong>
+                  <span>+ электрика, вода и вентиляция</span>
+                </button>
+                <button type="button" class="choice-card active" data-rate="58000" data-name="Под ключ с отделкой">
+                  <strong>Под ключ</strong>
+                  <span>Отделка, санузел и обогрев</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="calc-block">
+              <div class="calc-block-head">
+                <span>Опции и монтаж на участке</span>
+              </div>
+              <div class="addons-stack" id="addonsList">
+                <label class="addon-item">
+                  <span class="addon-check">
+                    <input type="checkbox" value="180000" checked />
+                    <span>Открытая терраса из лиственницы (12 м²)</span>
+                  </span>
+                  <b>+180 000 ₽</b>
+                </label>
+                <label class="addon-item">
+                  <span class="addon-check">
+                    <input type="checkbox" value="95000" checked />
+                    <span>Свайно-винтовой фундамент с монтажом</span>
+                  </span>
+                  <b>+95 000 ₽</b>
+                </label>
+                <label class="addon-item">
+                  <span class="addon-check">
+                    <input type="checkbox" value="55000" />
+                    <span>Тёплый пол в прихожей и санузле</span>
+                  </span>
+                  <b>+55 000 ₽</b>
+                </label>
+                <label class="addon-item">
+                  <span class="addon-check">
+                    <input type="checkbox" value="110000" />
+                    <span>Доставка тралом и установка краном по области</span>
+                  </span>
+                  <b>+110 000 ₽</b>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <aside class="calc-receipt" aria-label="Итог расчёта">
+            <div class="receipt-top">
+              <span class="mono-tag dark">ПРЕДВАРИТЕЛЬНАЯ СМЕТА</span>
+              <div class="receipt-sum" id="calcTotal">2 131 000 ₽</div>
+              <div class="receipt-sub" id="calcMonthly">Платёж по ипотеке / рассрочке — от 24 800 ₽/мес</div>
+            </div>
+
+            <dl class="receipt-list">
+              <div><dt>Площадь дома</dt><dd id="sumArea">32 м²</dd></div>
+              <div><dt>Утепление</dt><dd id="sumSeason">Зимний ПМЖ (200 мм)</dd></div>
+              <div><dt>Готовность</dt><dd id="sumFinish">Под ключ с отделкой</dd></div>
+              <div><dt>Срок в цеху</dt><dd id="sumDays">25–28 дней</dd></div>
+            </dl>
+
+            <button type="button" class="btn-main receipt-btn" id="sendCalcBtn">
+              Зафиксировать расчёт и получить PDF
+            </button>
+            <a href="https://vk.ru/kmodule" target="_blank" rel="noopener" class="receipt-vk">
+              Написать инженеру во ВКонтакте →
+            </a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ЭТАПЫ РАБОТЫ ================= -->
+    <section class="section section-tinted" id="process">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div>
+            <span class="mono-eyebrow">04 / КАК МЫ РАБОТАЕМ</span>
+            <h2>4 понятных этапа от визита в цех до ключей</h2>
+          </div>
+          <p class="section-note">
+            Открытое производство в Архангельске — можно приехать на любом этапе сборки и проверить скрытые работы.
+          </p>
+        </div>
+
+        <ol class="process-timeline reveal-up">
+          <li>
+            <span class="step-num">01</span>
+            <h3>Встреча в цеху и договор</h3>
+            <p>Смотрите готовые модули вживую, выбираете планировку и отделку. Фиксируем точную цену и сроки в договоре.</p>
+          </li>
+          <li>
+            <span class="step-num">02</span>
+            <h3>Сборка под крышей цеха</h3>
+            <p>За 21–35 дней собираем сухой каркас, укладываем 200–250 мм базальта, ставим панорамные окна и разводим инженерку.</p>
+          </li>
+          <li>
+            <span class="step-num">03</span>
+            <h3>Сваи и монтаж за 1 день</h3>
+            <p>Заранее монтируем свайное поле, затем привозим модули тралом и устанавливаем краном на участке за один световой день.</p>
+          </li>
+          <li>
+            <span class="step-num">04</span>
+            <h3>Подключение и выдача ключей</h3>
+            <p>Подсоединяем воду, канализацию и электричество, проверяем герметичность стыков и передаём дом с гарантией.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= ЗАПИСЬ В ЦЕХ И КОНТАКТЫ ================= -->
+    <section class="section" id="contacts">
+      <div class="container">
+        <div class="workshop-box reveal-up">
+          <div class="workshop-info">
+            <span class="mono-eyebrow">05 / ПРОИЗВОДСТВО В АРХАНГЕЛЬСКЕ</span>
+            <h2>Приезжайте в цех — покажем, как собираются дома изнутри</h2>
+            <p>
+              Никаких буклетных обещаний: вы увидите толщину доски, плотность утеплителя, качество сборки узлов и готовые модули перед отправкой заказчикам. Работаем по Архангельску, Северодвинску, Новодвинску и всей области.
+            </p>
+
+            <div class="workshop-links">
+              <a href="https://vk.ru/kmodule" target="_blank" rel="noopener" class="btn-vk large">
+                <svg viewBox="0 0 24 24"><path d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z"/></svg>
+                <span>Сообщество vk.ru/kmodule</span>
+              </a>
+            </div>
+          </div>
+
+          <form class="lead-form" id="mainLeadForm">
+            <h3>Записаться на просмотр или расчёт</h3>
+            <p class="form-hint">Ответим в мессенджере или перезвоним в рабочее время без навязчивых звонков.</p>
+            <input type="text" class="input-field" placeholder="Ваше имя" required />
+            <input type="tel" class="input-field" placeholder="+7 (___) ___-__-__" required />
+            <input type="text" class="input-field" id="leadCommentInput" placeholder="Какой проект интересен (например, K-32 Онега)" />
+            <button type="submit" class="btn-main form-submit">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>K|MODULE</strong>
+        <span>Модульные дома и бани собственного производства • Архангельск</span>
+      </div>
+      <div class="footer-links">
+        <a href="#catalog">Каталог</a>
+        <a href="#tech">Конструктив</a>
+        <a href="#calculator">Калькулятор</a>
+        <a href="https://vk.ru/kmodule" target="_blank" rel="noopener">vk.ru/kmodule</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= МОДАЛЬНОЕ ОКНО ПРОЕКТА И ПЛАНИРОВКИ ================= -->
+  <div class="modal-backdrop" id="projectModal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="closeModalBtn" aria-label="Закрыть">&times;</button>
+      <span class="mono-eyebrow" id="modalCategory">Проект для ПМЖ</span>
+      <h3 class="modal-title" id="modalTitle">K-32 «Онега»</h3>
+      <p class="modal-sub" id="modalSubtitle">Габариты 8.0 × 4.0 м • Срок сборки 25 дней</p>
+
+      <div class="modal-tabs">
+        <button type="button" class="modal-tab active" data-view="photo">Внешний вид</button>
+        <button type="button" class="modal-tab" data-view="plan">Схема планировки</button>
+      </div>
+
+      <div class="modal-preview" id="modalPreview"></div>
+
+      <div class="modal-bottom">
+        <div>
+          <span class="modal-pkg" id="modalPkgLabel">Комплектация: Тёплый контур</span>
+          <div class="modal-price" id="modalPrice">1 490 000 ₽</div>
+        </div>
+        <button type="button" class="btn-main" id="modalOrderBtn">Запросить смету по проекту</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Всплывающее уведомление -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    Заявка принята! Инженер K|MODULE свяжется с вами в ближайшее время.
+  </div>
+
+  <!-- ================= СКРИПТЫ И АНИМАЦИИ ================= -->
+  <script>
+    const PROJECTS = [
+      {
+        id: 'k18',
+        name: 'K-18 «Кенозеро»',
+        category: 'dacha',
+        categoryLabel: 'Дача и гостевой дом',
+        badge: '1 модуль',
+        hit: false,
+        area: 18,
+        dims: '6.0 × 3.0 м',
+        days: '21 день',
+        desc: 'Компактный тёплый модуль-студия для загородного участка, рыбалки или сдачи в аренду.',
+        specs: ['Студия + кухня', 'Санузел с душем', 'Утепление 200 мм'],
+        priceContour: 890000,
+        priceTurnkey: 1180000,
+        img: 'https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=900&q=80',
+        rooms: [
+          { name: 'Жилая зона + кухня', size: '13.5 м²', x: 24, y: 24, w: 312, h: 192 },
+          { name: 'Санузел', size: '3.2 м²', x: 336, y: 24, w: 140, h: 114 },
+          { name: 'Прихожая', size: '1.3 м²', x: 336, y: 138, w: 140, h: 78 }
+        ]
+      },
+      {
+        id: 'k32',
+        name: 'K-32 «Онега»',
+        category: 'pmzh',
+        categoryLabel: 'Для семьи и ПМЖ',
+        badge: 'Хит продаж',
+        hit: true,
+        area: 32,
+        dims: '8.0 × 4.0 м',
+        days: '25 дней',
+        desc: 'Самая востребованная модель: изолированная спальня, кухня-гостиная с панорамой и полноценный санузел.',
+        specs: ['1 спальня', 'Гостиная 15.4 м²', 'Панорамные окна', 'До −40 °C'],
+        priceContour: 1490000,
+        priceTurnkey: 1940000,
+        img: 'https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=900&q=80',
+        rooms: [
+          { name: 'Кухня-гостиная', size: '15.4 м²', x: 24, y: 24, w: 256, h: 192 },
+          { name: 'Спальня', size: '10.2 м²', x: 280, y: 24, w: 196, h: 122 },
+          { name: 'Санузел + тамбур', size: '6.4 м²', x: 280, y: 146, w: 196, h: 70 }
+        ]
+      },
+      {
+        id: 'k48',
+        name: 'K-48 «Двина»',
+        category: 'pmzh',
+        categoryLabel: 'Для семьи и ПМЖ',
+        badge: '2 модуля',
+        hit: false,
+        area: 48,
+        dims: '8.0 × 6.0 м',
+        days: '30 дней',
+        desc: 'Семейный дом из двух стыкуемых модулей с двумя отдельными спальнями и просторной гостиной.',
+        specs: ['2 спальни', 'Гостиная 21 м²', 'Техпомещение', 'Утепление 200 мм'],
+        priceContour: 2150000,
+        priceTurnkey: 2790000,
+        img: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=80',
+        rooms: [
+          { name: 'Кухня-гостиная', size: '21.0 м²', x: 24, y: 24, w: 236, h: 192 },
+          { name: 'Спальня 1', size: '11.0 м²', x: 260, y: 24, w: 216, h: 96 },
+          { name: 'Спальня 2', size: '10.5 м²', x: 260, y: 120, w: 136, h: 96 },
+          { name: 'Санузел', size: '5.5 м²', x: 396, y: 120, w: 80, h: 96 }
+        ]
+      },
+      {
+        id: 'k64',
+        name: 'K-64 «Беломорье»',
+        category: 'pmzh',
+        categoryLabel: 'Для семьи и ПМЖ',
+        badge: '3 спальни',
+        hit: false,
+        area: 64,
+        dims: '10.6 × 6.0 м',
+        days: '35 дней',
+        desc: 'Большой дом для постоянного проживания семьи с детьми: три спальни, котельная и выход на террасу.',
+        specs: ['3 спальни', 'Гостиная 24.5 м²', 'Отдельная котельная'],
+        priceContour: 2820000,
+        priceTurnkey: 3650000,
+        img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80',
+        rooms: [
+          { name: 'Кухня-гостиная', size: '24.5 м²', x: 24, y: 24, w: 226, h: 192 },
+          { name: 'Мастер-спальня', size: '13.0 м²', x: 250, y: 24, w: 226, h: 92 },
+          { name: 'Детская 1 + 2', size: '19.5 м²', x: 250, y: 116, w: 150, h: 100 },
+          { name: 'СУ + котельная', size: '7.0 м²', x: 400, y: 116, w: 76, h: 100 }
+        ]
+      },
+      {
+        id: 'k22',
+        name: 'K-22 «Тайга»',
+        category: 'sauna',
+        categoryLabel: 'Модульная баня',
+        badge: 'Баня под ключ',
+        hit: true,
+        area: 22,
+        dims: '7.0 × 3.1 м',
+        days: '21 день',
+        desc: 'Готовая северная баня с парной из липы, печью с закрытой каменкой, душевой и комнатой отдыха.',
+        specs: ['Парная из липы', 'Печь с камнями', 'Комната отдыха 11.2 м²'],
+        priceContour: 1050000,
+        priceTurnkey: 1390000,
+        img: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=900&q=80',
+        rooms: [
+          { name: 'Комната отдыха', size: '11.2 м²', x: 24, y: 24, w: 246, h: 192 },
+          { name: 'Парная (липа)', size: '6.3 м²', x: 270, y: 24, w: 206, h: 110 },
+          { name: 'Душевая + СУ', size: '4.5 м²', x: 270, y: 134, w: 206, h: 82 }
+        ]
+      },
+      {
+        id: 'k36',
+        name: 'K-36 «Соловки»',
+        category: 'sauna',
+        categoryLabel: 'Дом-баня с террасой',
+        badge: '2 в 1',
+        hit: false,
+        area: 36,
+        dims: '9.0 × 4.0 м',
+        days: '28 дней',
+        desc: 'Универсальный формат для участка: жилая гостиная с кухней, парная и крытая терраса под общей кровлей.',
+        specs: ['Жилая зона + парная', 'Крытая терраса 10 м²', 'Зимний контур'],
+        priceContour: 1690000,
+        priceTurnkey: 2190000,
+        img: 'https://images.unsplash.com/photo-1542718610-a1d656d1884c?auto=format&fit=crop&w=900&q=80',
+        rooms: [
+          { name: 'Гостиная-кухня', size: '16.0 м²', x: 24, y: 24, w: 226, h: 192 },
+          { name: 'Парная + душ', size: '10.0 м²', x: 250, y: 24, w: 126, h: 192 },
+          { name: 'Крытая терраса', size: '10.0 м²', x: 376, y: 24, w: 100, h: 192 }
+        ]
+      }
+    ];
+
+    const TECH_DATA = {
+      walls: {
+        code: 'УЗЕЛ А • НАРУЖНАЯ СТЕНА',
+        title: 'Перекрёстное базальтовое утепление 200 мм',
+        desc: 'Закладываем плитный базальт высокой плотности в два перехлёстных слоя — перекрываем деревянные стойки и полностью убираем мостики холода.',
+        layers: [
+          ['Фасадный планкен / имитация бруса (сосна или лиственница)', '20 мм'],
+          ['Вентилируемый зазор + супердиффузионная мембрана', '30 мм'],
+          ['Основное слой базальтового утеплителя в каркасе', '150 мм'],
+          ['Контр-утепление по бруску + проклеенная пароизоляция', '50 мм'],
+          ['Внутренняя чистовая отделка (имитация бруса / ГКЛ)', '16 мм']
+        ]
+      },
+      frame: {
+        code: 'УЗЕЛ Б • НЕСУЩИЙ КАРКАС',
+        title: 'Сухая строганая доска камерной сушки (12–14%)',
+        desc: 'Влажная доска на морозе крутится и даёт щели. Мы работаем только с калиброванным сухим пиломатериалом: геометрия дома стабильна годами.',
+        layers: [
+          ['Стойки и обвязка из строганой доски 45×145 / 45×195 мм', 'ГОСТ'],
+          ['Глубокое антисептирование нижней обвязки и лаг', 'Биозащита'],
+          ['Усиленные металлические узлы для погрузки краном', 'Транспорт'],
+          ['Мелкоячеистая оцинкованная сетка от грызунов снизу', 'Защита']
+        ]
+      },
+      windows: {
+        code: 'УЗЕЛ В • ОСТЕКЛЕНИЕ',
+        title: 'Энергосберегающие панорамные теплопакеты',
+        desc: 'Используем профиль 70 мм и двухкамерные стеклопакеты с напылением и аргоном: тепло остаётся в комнате, а на стёклах не выпадает конденсат.',
+        layers: [
+          ['Пятикамерный оконный профиль монтажной глубиной 70 мм', 'Класс А'],
+          ['Двухкамерный стеклопакет 40 мм с мультифункциональным стеклом', 'Аргон'],
+          ['Закалённые безопасные стёкла в витражах в пол', 'Устойчивость'],
+          ['Тёплый монтаж по ГОСТ с паро- и гидроизоляционными лентами', 'Без продувания']
+        ]
+      },
+      roof: {
+        code: 'УЗЕЛ Г • ПОЛ И КРОВЛЯ',
+        title: 'Утепление 250 мм под снеговую нагрузку Архангельска',
+        desc: 'Поморье относится к IV снеговому району — стропила рассчитаны с запасом прочности, а 250 мм базальта в полу и кровле снижают расходы на отопление.',
+        layers: [
+          ['Кровля: кликфальц или металлочерепица толщиной 0.5 мм', 'Сталь'],
+          ['Вентилируемый контрбрус и усиленная обрешётка', '50 мм'],
+          ['Базальтовое утепление перекрытия пола и скатов кровли', '250 мм'],
+          ['Черновой пол из влагостойкой берёзовой фанеры ФСФ 21 мм', 'Монолит']
+        ]
+      }
+    };
+
+    let currentFilter = 'all';
+    let currentPkg = 'contour';
+    let selectedProject = PROJECTS[1];
+    let modalView = 'photo';
+
+    const formatRub = (num) => num.toLocaleString('ru-RU') + ' ₽';
+
+    /* ================= КАТАЛОГ ================= */
+    function renderCatalog() {
+      const grid = document.getElementById('catalogGrid');
+      const filtered = currentFilter === 'all'
+        ? PROJECTS
+        : PROJECTS.filter(p => p.category === currentFilter);
+
+      grid.innerHTML = filtered.map((p, index) => {
+        const price = currentPkg === 'contour' ? p.priceContour : p.priceTurnkey;
+        const pkgName = currentPkg === 'contour' ? 'тёплый контур' : 'под ключ с отделкой';
+        return `
+          <article class="house-card card-enter" style="animation-delay: ${index * 55}ms">
+            <div class="card-media" onclick="openProjectModal('${p.id}')" role="button" tabindex="0">
+              <img src="${p.img}" alt="${p.name}" loading="lazy" />
+              <span class="card-badge ${p.hit ? 'hit' : ''}">${p.badge}</span>
+              <span class="card-size-tag">${p.area} м² • ${p.dims}</span>
+            </div>
+            <div class="card-body">
+              <div class="card-top">
+                <span class="card-cat">${p.categoryLabel}</span>
+                <span class="card-days">${p.days}</span>
+              </div>
+              <h3 class="card-title">${p.name}</h3>
+              <p class="card-desc">${p.desc}</p>
+              <div class="card-specs">
+                ${p.specs.map(s => `<span>${s}</span>`).join('')}
+              </div>
+              <div class="card-footer">
+                <div class="card-price">
+                  <strong>${formatRub(price)}</strong>
+                  <small>${pkgName}</small>
+                </div>
+                <button type="button" class="btn-card" onclick="openProjectModal('${p.id}')">
+                  Планировка
+                </button>
+              </div>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentFilter = btn.dataset.filter;
+        renderCatalog();
+      });
+    });
+
+    document.querySelectorAll('.pkg-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.pkg-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentPkg = btn.dataset.pkg;
+        renderCatalog();
+      });
+    });
+
+    /* ================= КОНСТРУКТИВ ================= */
+    function renderTech(key) {
+      const data = TECH_DATA[key];
+      const box = document.getElementById('techDetailBox');
+      box.classList.remove('fade-swap');
+      void box.offsetWidth;
+      box.classList.add('fade-swap');
+
+      box.innerHTML = `
+        <span class="tech-sheet-code">${data.code}</span>
+        <h3>${data.title}</h3>
+        <p>${data.desc}</p>
+        <div class="layer-table">
+          ${data.layers.map((l, i) => `
+            <div class="layer-row">
+              <span class="layer-idx">0${i + 1}</span>
+              <div class="layer-name">${l[0]}</div>
+              <span class="layer-val">${l[1]}</span>
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    document.querySelectorAll('.tech-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.tech-tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        renderTech(tab.dataset.tech);
+      });
+    });
+
+    /* ================= КАЛЬКУЛЯТОР С ПЛАВНОЙ АНИМАЦИЕЙ ЧИСЕЛ ================= */
+    let calcState = {
+      area: 32,
+      seasonMult: 1,
+      seasonName: 'Зимний ПМЖ (200 мм)',
+      finishRate: 58000,
+      finishName: 'Под ключ с отделкой'
+    };
+
+    let displayedTotal = 2131000;
+    let totalAnimFrame = null;
+
+    function animateTotal(target) {
+      if (totalAnimFrame) cancelAnimationFrame(totalAnimFrame);
+      const start = displayedTotal;
+      const diff = target - start;
+      const duration = 260;
+      const startTime = performance.now();
+
+      function step(now) {
+        const progress = Math.min((now - startTime) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const current = Math.round((start + diff * eased) / 1000) * 1000;
+        document.getElementById('calcTotal').textContent = formatRub(current);
+        if (progress < 1) {
+          totalAnimFrame = requestAnimationFrame(step);
+        } else {
+          displayedTotal = target;
+          document.getElementById('calcTotal').textContent = formatRub(target);
+        }
+      }
+      totalAnimFrame = requestAnimationFrame(step);
+    }
+
+    function updateCalc(animate = true) {
+      let addonsTotal = 0;
+      document.querySelectorAll('#addonsList input:checked').forEach(cb => {
+        addonsTotal += Number(cb.value);
+      });
+
+      const base = Math.round((calcState.area * calcState.finishRate * calcState.seasonMult) / 1000) * 1000;
+      const total = base + addonsTotal;
+      const monthly = Math.round(total / 86);
+      const days = calcState.area <= 24 ? '21 день' : calcState.area <= 44 ? '25–28 дней' : '32–35 дней';
+
+      document.getElementById('calcAreaDisplay').textContent = calcState.area + ' м²';
+      if (animate) {
+        animateTotal(total);
+      } else {
+        displayedTotal = total;
+        document.getElementById('calcTotal').textContent = formatRub(total);
+      }
+
+      document.getElementById('calcMonthly').textContent = `Платёж по ипотеке / рассрочке — от ${formatRub(monthly)}/мес`;
+      document.getElementById('sumArea').textContent = calcState.area + ' м²';
+      document.getElementById('sumSeason').textContent = calcState.seasonName;
+      document.getElementById('sumFinish').textContent = calcState.finishName;
+      document.getElementById('sumDays').textContent = days;
+
+      document.querySelectorAll('.preset-chip').forEach(chip => {
+        chip.classList.toggle('active', Number(chip.dataset.area) === calcState.area);
+      });
+    }
+
+    const areaRange = document.getElementById('calcAreaRange');
+    areaRange.addEventListener('input', (e) => {
+      calcState.area = Number(e.target.value);
+      updateCalc(false);
+    });
+
+    document.querySelectorAll('.preset-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        calcState.area = Number(chip.dataset.area);
+        areaRange.value = calcState.area;
+        updateCalc(true);
+      });
+    });
+
+    document.querySelectorAll('#seasonGroup .choice-card').forEach(card => {
+      card.addEventListener('click', () => {
+        document.querySelectorAll('#seasonGroup .choice-card').forEach(c => c.classList.remove('active'));
+        card.classList.add('active');
+        calcState.seasonMult = Number(card.dataset.mult);
+        calcState.seasonName = card.dataset.name;
+        updateCalc(true);
+      });
+    });
+
+    document.querySelectorAll('#finishGroup .choice-card').forEach(card => {
+      card.addEventListener('click', () => {
+        document.querySelectorAll('#finishGroup .choice-card').forEach(c => c.classList.remove('active'));
+        card.classList.add('active');
+        calcState.finishRate = Number(card.dataset.rate);
+        calcState.finishName = card.dataset.name;
+        updateCalc(true);
+      });
+    });
+
+    document.querySelectorAll('#addonsList input').forEach(cb => {
+      cb.addEventListener('change', () => updateCalc(true));
+    });
+
+    document.getElementById('sendCalcBtn').addEventListener('click', () => {
+      const input = document.getElementById('leadCommentInput');
+      input.value = `Расчёт из калькулятора: ${calcState.area} м², ${calcState.finishName} (~${formatRub(displayedTotal)})`;
+      document.getElementById('contacts').scrollIntoView({ behavior: 'smooth' });
+      setTimeout(() => input.focus(), 450);
+    });
+
+    /* ================= МОДАЛЬНОЕ ОКНО И ЧЕРТЁЖ ПЛАНИРОВКИ ================= */
+    function renderModalPreview() {
+      const container = document.getElementById('modalPreview');
+      if (modalView === 'photo') {
+        container.innerHTML = `<img src="${selectedProject.img}" alt="${selectedProject.name}" />`;
+      } else {
+        const roomsSvg = selectedProject.rooms.map(r => `
+          <g>
+            <rect x="${r.x}" y="${r.y}" width="${r.w}" height="${r.h}" fill="#FFFFFF" stroke="#161719" stroke-width="2.5" />
+            <text x="${r.x + r.w / 2}" y="${r.y + r.h / 2 - 4}" text-anchor="middle" font-family="Manrope, sans-serif" font-size="13" font-weight="700" fill="#161719">${r.name}</text>
+            <text x="${r.x + r.w / 2}" y="${r.y + r.h / 2 + 15}" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11.5" font-weight="600" fill="#D94B1A">${r.size}</text>
+          </g>
+        `).join('');
+
+        container.innerHTML = `
+          <svg viewBox="0 0 500 252" width="100%" height="100%" style="background:#F3F0E8;">
+            <defs>
+              <pattern id="gridPattern" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#E4DFD3" stroke-width="0.8"/>
+              </pattern>
+            </defs>
+            <rect width="500" height="252" fill="url(#gridPattern)" />
+            ${roomsSvg}
+            <text x="250" y="239" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" font-weight="600" fill="#5A5D63">
+              ГАБАРИТЫ: ${selectedProject.dims} • ОБЩАЯ ПЛОЩАДЬ: ${selectedProject.area} М²
+            </text>
+          </svg>
+        `;
+      }
+    }
+
+    window.openProjectModal = function(id) {
+      selectedProject = PROJECTS.find(p => p.id === id) || PROJECTS[0];
+      modalView = 'photo';
+      document.querySelectorAll('.modal-tab').forEach(t => t.classList.toggle('active', t.dataset.view === 'photo'));
+
+      const price = currentPkg === 'contour' ? selectedProject.priceContour : selectedProject.priceTurnkey;
+      const pkgText = currentPkg === 'contour' ? 'Тёплый контур' : 'Под ключ с отделкой';
+
+      document.getElementById('modalCategory').textContent = selectedProject.categoryLabel;
+      document.getElementById('modalTitle').textContent = selectedProject.name;
+      document.getElementById('modalSubtitle').textContent = `Габариты ${selectedProject.dims} • Площадь ${selectedProject.area} м² • Сборка ${selectedProject.days}`;
+      document.getElementById('modalPkgLabel').textContent = `Комплектация: ${pkgText}`;
+      document.getElementById('modalPrice').textContent = formatRub(price);
+
+      renderModalPreview();
+      const modal = document.getElementById('projectModal');
+      modal.classList.add('open');
+      modal.setAttribute('aria-hidden', 'false');
+    };
+
+    function closeProjectModal() {
+      const modal = document.getElementById('projectModal');
+      modal.classList.remove('open');
+      modal.setAttribute('aria-hidden', 'true');
+    }
+
+    document.querySelectorAll('.modal-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.modal-tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        modalView = tab.dataset.view;
+        renderModalPreview();
+      });
+    });
+
+    document.getElementById('closeModalBtn').addEventListener('click', closeProjectModal);
+    document.getElementById('projectModal').addEventListener('click', (e) => {
+      if (e.target.id === 'projectModal') closeProjectModal();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeProjectModal();
+        closeDrawer();
+      }
+    });
+
+    document.getElementById('modalOrderBtn').addEventListener('click', () => {
+      closeProjectModal();
+      const input = document.getElementById('leadCommentInput');
+      input.value = `Интересует проект ${selectedProject.name} (${currentPkg === 'contour' ? 'Тёплый контур' : 'Под ключ'})`;
+      document.getElementById('contacts').scrollIntoView({ behavior: 'smooth' });
+      setTimeout(() => input.focus(), 450);
+    });
+
+    /* ================= МОБИЛЬНОЕ МЕНЮ ================= */
+    const drawer = document.getElementById('mobileDrawer');
+    function openDrawer() {
+      drawer.classList.add('open');
+      drawer.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeDrawer() {
+      drawer.classList.remove('open');
+      drawer.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    document.getElementById('openDrawerBtn').addEventListener('click', openDrawer);
+    document.getElementById('closeDrawerBtn').addEventListener('click', closeDrawer);
+    drawer.addEventListener('click', (e) => {
+      if (e.target === drawer) closeDrawer();
+    });
+    document.querySelectorAll('.drawer-link').forEach(link => {
+      link.addEventListener('click', closeDrawer);
+    });
+
+    /* ================= СКРОЛЛ-АНИМАЦИИ, ПРОГРЕСС И ПОДСВЕТКА НАВИГАЦИИ ================= */
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal-up').forEach(el => revealObserver.observe(el));
+
+    const sections = ['catalog', 'tech', 'calculator', 'process', 'contacts'];
+    const progressBar = document.getElementById('scrollProgress');
+    const siteHeader = document.getElementById('siteHeader');
+
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = docHeight > 0 ? Math.min((scrollTop / docHeight) * 100, 100) : 0;
+      progressBar.style.width = pct + '%';
+
+      siteHeader.classList.toggle('scrolled', scrollTop > 20);
+
+      const scrollPos = scrollTop + 170;
+      let currentId = 'catalog';
+      sections.forEach(id => {
+        const el = document.getElementById(id);
+        if (el && el.offsetTop <= scrollPos) {
+          currentId = id;
+        }
+      });
+
+      document.querySelectorAll('.nav-link, .quick-pill').forEach(link => {
+        const href = link.getAttribute('href').replace('#', '');
+        link.classList.toggle('active', href === currentId);
+      });
+    }, { passive: true });
+
+    /* ================= ОТПРАВКА ФОРМЫ ================= */
+    document.getElementById('mainLeadForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const toast = document.getElementById('toast');
+      toast.classList.add('show');
+      e.target.reset();
+      setTimeout(() => toast.classList.remove('show'), 4200);
+    });
+
+    renderCatalog();
+    renderTech('walls');
+    updateCalc(false);
+  </script>
+</body>
+</html>
